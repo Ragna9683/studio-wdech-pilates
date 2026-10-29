@@ -37,6 +37,10 @@ python3 -m http.server 8000
 
 Static site. Works as is on GitHub Pages (Settings, Pages, branch `main`, folder `/root`), Netlify or Vercel.
 
+## 🔗 Links
+* **Live Demo:** [View Website](https://ragna9683.github.io/studio-wdech-pilates/)[cite: 1]
+
+
 ## Stack
 
 HTML5, CSS3 (custom properties, grid, flexbox, `prefers-color-scheme`, `prefers-reduced-motion`), vanilla JavaScript. Fonts: Google Fonts, with system fallbacks.
