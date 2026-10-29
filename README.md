@@ -1,22 +1,42 @@
-# 🧘‍♀️ Studio Wdech — Pilates Studio
+# Studio Wdech (pilates studio)
 
-A modern, elegant, and responsive website for a pilates studio, designed with a strong focus on harmony, health, and user convenience. This project was created to attract clients and provide all essential information about services, schedules, and trainers.
+One-page website for a pilates studio: light, calm design, interactive weekly class schedule, pricing plans, FAQ and a booking form. Language: Polish.
 
-## ✨ Features
-* **Responsive Design:** Looks great and functions smoothly on any device (smartphones, tablets, and desktops).
-* **Intuitive Navigation:** Quick access to class schedules, pricing, and studio contacts.
-* **Clean Code:** Structured using modern HTML5, CSS3, and JavaScript practices[cite: 1].
+> **Concept project.** The business, prices, address and phone number are fictional.
+> The form does not send data anywhere.
 
-## 🛠️ Technologies
-* **HTML5**[cite: 1]
-* **CSS3 (Flexbox / Grid)**[cite: 1]
-* **JavaScript (Vanilla)**[cite: 1]
+## Structure
 
-## 📁 Project Structure
-```text
+```
 studio-wdech-pilates/
-├── index.html
+├── index.html      Markup only
 ├── css/
-│   └── style.css
+│   └── style.css   Styles: design tokens (CSS variables), light/dark theme, responsive layout
 └── js/
-    └── main.js
+    └── main.js     Mobile menu, scroll reveal, weekly schedule, demo form
+```
+
+## Run locally
+
+No build step, no dependencies. Open `index.html` in a browser, or serve the folder:
+
+```bash
+python3 -m http.server 8000
+# http://localhost:8000
+```
+
+## Features
+
+- Weekly schedule rendered from a data array (day tabs, sign-up button pre-fills the form)
+- Pricing plans and expandable FAQ (native `<details>`)
+- Sticky header with mobile menu
+- Scroll-reveal animation (disabled for `prefers-reduced-motion`)
+- Light and dark colour schemes
+
+## Deploy
+
+Static site. Works as is on GitHub Pages (Settings, Pages, branch `main`, folder `/root`), Netlify or Vercel.
+
+## Stack
+
+HTML5, CSS3 (custom properties, grid, flexbox, `prefers-color-scheme`, `prefers-reduced-motion`), vanilla JavaScript. Fonts: Google Fonts, with system fallbacks.

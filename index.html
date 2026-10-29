@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Studio Wdech – pilates reformer · projekt koncepcyjny</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<!-- Marks the page as JS-enabled before first paint (prevents a flash of hidden content) -->
+<script>document.documentElement.classList.add("js");</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="logo" href="#">Studio <i>Wdech</i></a>
+<button class="menu" id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false">&#9776;</button>
+<nav id="site-nav"><a href="#zajecia">Zajęcia</a><a href="#grafik">Grafik</a><a href="#karnety">Karnety</a><a href="#pytania">Pytania</a><a href="#zapis">Zapis</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+<div class="eyebrow">Pilates reformer · Projekt koncepcyjny</div>
+<h1>Ruch, który <em>uspokaja</em> głowę</h1>
+<p>Kameralne zajęcia w małych grupach. Uczymy poprawnej techniki, w Twoim tempie, od pierwszego treningu.</p>
+<a class="btn" href="#grafik">Zobacz grafik</a><a class="btn alt" href="#karnety">Karnety</a>
+<div class="facts"><span>Małe grupy</span><span>Dla początkujących</span><span>Zapis online</span><span>Sprzęt na miejscu</span></div>
+</div></div>
+
+<section id="zajecia"><div class="wrap rv">
+<div class="kicker">Zajęcia</div><h2>Znajdź swój rytm</h2>
+<div class="grid">
+<div class="card"><div class="dot"></div><h3>Reformer</h3><p>Trening na sprzęcie ze sprężynami. Wzmacnia mięśnie głębokie i poprawia postawę.</p></div>
+<div class="card"><div class="dot"></div><h3>Mat Pilates</h3><p>Klasyczne ćwiczenia na macie. Kontrola, oddech i stabilny środek ciała.</p></div>
+<div class="card"><div class="dot"></div><h3>Barre</h3><p>Połączenie pilatesu, baletu i jogi. Lekkie, a jednocześnie wymagające.</p></div>
+<div class="card"><div class="dot"></div><h3>Stretching</h3><p>Spokojne rozciąganie na koniec dnia. Mniej napięcia, więcej ruchomości.</p></div>
+</div>
+</div></section>
+
+<section id="grafik" class="alt-bg"><div class="wrap rv">
+<div class="kicker">Grafik</div><h2>Wybierz dzień</h2>
+<div class="days" id="days"></div>
+<div id="slots"></div>
+<p class="note">Grafik przykładowy. W prawdziwym projekcie dane pochodzą z systemu zapisów studia.</p>
+</div></section>
+
+<section id="karnety"><div class="wrap rv">
+<div class="kicker">Karnety</div><h2>Prosto i przejrzyście</h2>
+<div class="price">
+<div class="plan"><span class="n">Pojedyncze wejście</span><span class="p">55 zł</span><small>jedne zajęcia</small><ul><li>Idealne na próbę</li><li>Bez zobowiązań</li></ul><a class="btn alt" href="#zapis">Wybieram</a></div>
+<div class="plan hot"><span class="tag">Najczęściej wybierany</span><span class="n">Karnet 4 wejścia</span><span class="p">190 zł</span><small>ważny 30 dni</small><ul><li>Raz w tygodniu</li><li>Dowolne zajęcia</li></ul><a class="btn" href="#zapis">Wybieram</a></div>
+<div class="plan"><span class="n">Karnet 8 wejść</span><span class="p">340 zł</span><small>ważny 45 dni</small><ul><li>Dwa razy w tygodniu</li><li>Najniższa cena za zajęcia</li></ul><a class="btn alt" href="#zapis">Wybieram</a></div>
+</div>
+<p class="note">Ceny przykładowe.</p>
+</div></section>
+
+<section id="pytania" class="alt-bg"><div class="wrap rv">
+<div class="kicker">Pierwszy raz</div><h2>Najczęstsze pytania</h2>
+<details><summary>Czy muszę mieć doświadczenie?</summary><p>Nie. Zajęcia dla początkujących prowadzimy od podstaw, a instruktor pokazuje poprawną technikę i podpowiada, jak dopasować ćwiczenia do siebie.</p></details>
+<details><summary>W co się ubrać i co zabrać?</summary><p>Wygodny strój sportowy i skarpetki, najlepiej antypoślizgowe. Resztę sprzętu zapewnia studio.</p></details>
+<details><summary>Czy mogę odwołać zajęcia?</summary><p>Tak, zasady odwoływania zależą od studia. W prawdziwym projekcie wpiszę tu regulamin klienta.</p></details>
+</div></section>
+
+<section id="zapis"><div class="wrap rv"><div class="cols">
+<div>
+<div class="kicker">Zapis</div><h2>Zarezerwuj miejsce</h2>
+<p class="lead">Wybierz zajęcia w grafiku albo wpisz własny termin. Odpowiemy i potwierdzimy rezerwację.</p>
+<p class="note">ul. Przykładowa 1, Twoje Miasto · tel. 000 000 000</p>
+</div>
+<form id="booking-form" novalidate>
+<label>Imię<input id="name" type="text" autocomplete="given-name" required></label>
+<label>Wybrane zajęcia<input id="selected-class" type="text" placeholder="np. Poniedziałek 18:00 · Barre"></label>
+<button class="btn" type="submit">Wyślij zgłoszenie</button>
+<div id="form-message" role="status"></div>
+</form>
+</div></div></section>
+
+<footer>© Studio Wdech · Projekt koncepcyjny wykonany przez Yaroslava, dane i ceny są przykładowe.</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
